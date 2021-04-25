@@ -2,7 +2,7 @@
 
 We implemented a simulated environment and build a reinforcement learning agent that discovers the optimal (shortest) path to a goal. The agent’s environment will look like:
 
-<img src="https://github.com/yangzi33/rl-maze-solver/blob/main/maze.png?raw=true" width="100" height="100" />
+<img src="https://github.com/yangzi33/rl-maze-solver/blob/main/maze.png?raw=true" width="500" height="500" />
 
 Each cell is a state in the environment. The cell labeled “I” is the initial state of the agent. The cell labeled “G” is the goal state of the agent. The black cells are barriers—states that are inaccessible to the agent. At each time step, the agent may move one cell to the left, right, up, or down. The environment does not wraparound. Thus, if the agent is in the lower left corner and tries to move down, it will remain in the same cell. Likewise, if the agent is in the initial state and tries to move up (into a barrier), it will remain in the same cell.
 
