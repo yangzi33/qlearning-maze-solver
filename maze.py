@@ -19,7 +19,9 @@ SPACE_MEANING = {
 class MazeEnv:
 
     def __init__(self, start=[6,3], goals=[[1, 8]]):
-        """Deterministic Maze Environment"""
+        """
+        Creates a Deterministic Maze Environment
+        """
 
         self.m_size = 10
         self.reward = 10
@@ -39,7 +41,7 @@ class MazeEnv:
         self.obs = self.start
 
     def step(self, a):
-        """ Perform a action on the environment
+        """ Perform a step action on the environment
 
             Args:
                 a (int): action integer
@@ -140,7 +142,8 @@ class MazeEnv:
 
 
 class ProbabilisticMazeEnv(MazeEnv):
-    """ (Q2.3) Hints: you can refer the implementation in MazeEnv 
+    """ 
+    Creates a Probablitstic Maze Environment
     """
     
     def __init__(self, goals=[[2, 8]], p_random=0.05):
